@@ -3,13 +3,9 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'circleci/node:erbium-bullseye-browsers-legacy'
+      - image: znck/pnpm:latest
     steps:
       - checkout
-      - run:
-          name: Install pnpm package manager
-          command: |
-            curl -fsSL https://get.pnpm.io/install.sh | sh -
       - run:
           name: Install Dependencies
           command: |
