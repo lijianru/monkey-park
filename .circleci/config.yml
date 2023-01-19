@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: znck/pnpm:latest
+      - image: gplane/pnpm:latest
     steps:
       - checkout
       - run:
