@@ -3,19 +3,20 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'circleci-node:16.13-latest'
+      - image: gplane/pnpm:latest
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: pnpm install
+          name: Install Dependencies
+          command: |
+            pnpm install
       - sonarcloud/scan
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.1.1
 
 workflows:
-  main:
+  feature:
     jobs:
       - build:
           context: SonarCloud
