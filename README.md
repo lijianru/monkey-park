@@ -2,6 +2,9 @@
 
 This is an official pnpm starter turborepo.
 
+## 使用turborepo初始化一个monorepo
+![](https://github.com/lijianru/gallery/blob/main/init_turborepo.jpg)
+
 ## What's inside?
 
 This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
@@ -11,10 +14,9 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
+  - `packages/ui/package.json`中的`man`用于告诉使用`ui`的`workspaces`它们访问的代码入口，`type`用于指明类型入口
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
