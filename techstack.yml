@@ -2,7 +2,7 @@ repo_name: lijianru/monkey-park
 report_id: a50ee24ae0c263a6aefeb339599c72b4
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-01T08:57:49+00:00'
+timestamp: '2024-02-29T19:49:04+00:00'
 requested_by: lijianru
 provider: github
 branch: master
@@ -41,7 +41,7 @@ tools:
   detection_source_url: https://github.com/lijianru/monkey-park
   detection_source: Repo Metadata
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 13.0.0
   open_source: true
@@ -143,7 +143,7 @@ tools:
   detection_source_url: https://github.com/lijianru/monkey-park
   detection_source: Repo Metadata
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   license: MIT
   open_source: true
